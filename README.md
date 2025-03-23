@@ -16,7 +16,15 @@ A minimal HelloWorld service built with Flask and deployed to a local Kubernetes
 
 ---
 
-## 📦 Deploy to Local Kind Cluster
+## 📦 Build and Deploy to Local Kind Cluster
 
 ```bash
 make kind-deploy
+```
+
+## ℹ️ List all available commands
+
+```bash
+make help
+```
+ 
