@@ -1,15 +1,22 @@
-# HelloWorld Kubernetes App
+# 🐳 k8s-helloworld
 
-Minimal Flask app deployed to Kubernetes.
+A minimal HelloWorld service built with Flask and deployed to a local Kubernetes cluster using Kind.
 
-## Commands
+---
+
+## 🚀 Quick Start
+
+### 🔧 Requirements
+
+- [Docker](https://docs.docker.com/)
+- [Kind](https://kind.sigs.k8s.io/)
+- [kubectl](https://kubernetes.io/docs/tasks/tools/)
+- [make](https://www.gnu.org/software/make/)
+- (optional) [Python + pytest](https://docs.pytest.org/) for local unit testing
+
+---
+
+## 📦 Deploy to Local Kind Cluster
 
 ```bash
-make build         # Build Docker image
-make apply         # Apply Kubernetes manifests
-make delete        # Delete Kubernetes resources
-make logs          # View logs
-make port-forward  # Forward port 8080
-```
-
-Visit http://localhost:8080 to see the result.
+make kind-deploy
